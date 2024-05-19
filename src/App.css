@@ -6,6 +6,7 @@ html, body{
   transition-duration: 4.5s;
 }
 ::-webkit-scrollbar {
+  display: none;
   width: 10px;
   background: #fff8dc;
 }
