@@ -1,0 +1,21 @@
+html, body{
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition-duration: 4.5s;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: #fff8dc;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #fff8dc;
+  background: #333333;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333bd;
+}

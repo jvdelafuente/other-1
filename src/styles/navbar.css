@@ -1,0 +1,14 @@
+.navbar-container {
+  position: fixed;
+  background-color: #333333;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container a{
+  text-decoration: none;
+
+}

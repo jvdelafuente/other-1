@@ -1,0 +1,68 @@
+.project-big-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 350vh;
+  width: 100vw;
+  background-image: url("../assets/bg-white.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.project-big-container p{
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  width: 40vw;
+  margin-top: 1%;
+
+}
+
+.project-big-container h2{
+  font-size: 40px;
+  margin: 1%;
+  font-family: 'Safilms Crawford', sans-serif;
+}
+
+.panoramic-container{
+      box-shadow: 0px 0px 12px #000000;
+  margin-bottom: 40px;
+  color: #fff8dc;
+  background-color: #333333;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.panoramic-container p{
+  text-align: left;
+  width: 50%;
+  font-size: 18px;
+  margin-top: 40px;
+}
+.panoramic-container iframe{
+  margin-top: 2%;
+  width: 75vw;
+  height: 40vh;
+}
+@media (max-width: 850px){
+  .panoramic-container{
+    height: 80vh;
+  }
+    .panoramic-container p {
+      text-align: left;
+      width: 75%;
+      font-size: 16px;
+      margin-top: 40px;
+    }
+        .project-big-container h2 {
+          font-size: 40px;
+          margin: 40px;
+          font-family: 'Safilms Crawford', sans-serif;
+        }
+}

@@ -1,0 +1,97 @@
+@import url("https://fonts.cdnfonts.com/css/safilms-crawford");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.next-big-container {
+  overflow-y: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  /* height: 100vh; */
+  background-image: url("../assets/bg-white.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.next-container {
+  overflow-y: hidden;
+  height: 60vh;
+  width: 100vw;
+  box-shadow: 0px 0px 12px #333333;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin: 0px 0px 10% 0px ; */
+}
+.next-container a {
+  text-decoration: none;
+}
+
+#next-card {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  font-size: 28px;
+  color: #fff8dc;
+  font-family: "Safilms Crawford", sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+}
+#next-card:hover .next-h2 {
+  filter: drop-shadow(0px 5px 3px #000000ce);
+}
+.next-h2 {
+  margin-top: 25px;
+  text-align: center;
+  filter: drop-shadow(0px 0px 3px #0000008e);
+}
+#next-card:hover {
+  animation: border-fill 1s linear forwards;
+  /* border: 1px solid #fff8dc; */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  /* Stronger shadow on hover */
+}
+
+#next-card p {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  padding: 25px;
+}
+
+
+.next-svg {
+  transform: rotate(180deg);
+    animation-name: appear-svg;
+      animation-timeline: scroll(root block);
+      animation-fill-mode: both;
+      animation-duration: 500ms;
+}
+
+@keyframes appear-svg {
+  0% {
+    opacity: 0;
+  }
+  80% {
+opacity: 0;
+  }
+  100% {
+opacity: 1;
+  }
+}
+
+@media (max-width: 1000px){
+  .next-container{
+    flex-direction: column;
+    height: 100%;
+  }
+  #next-card{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
